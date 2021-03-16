@@ -1,12 +1,20 @@
 digraph Tree {
 node [shape=box] ;
-0 [label="loudness <= 0.797\nentropy = 0.887\nsamples = 4221\nvalue = [2934, 1287]"] ;
-1 [label="entropy = 0.479\nsamples = 921\nvalue = [826, 95]"] ;
+0 [label="acousticness <= 0.484\nentropy = 0.887\nsamples = 4221\nvalue = [2934, 1287]"] ;
+1 [label="year <= 2010.5\nentropy = 0.928\nsamples = 3433\nvalue = [2254, 1179]"] ;
 0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
-2 [label="explicit_1 <= 0.5\nentropy = 0.944\nsamples = 3300\nvalue = [2108, 1192]"] ;
-0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
-3 [label="entropy = 0.952\nsamples = 3202\nvalue = [2012, 1190]"] ;
+2 [label="loudness <= 0.821\nentropy = 0.845\nsamples = 1635\nvalue = [1190, 445]"] ;
+1 -> 2 ;
+3 [label="entropy = 0.576\nsamples = 475\nvalue = [410, 65]"] ;
 2 -> 3 ;
-4 [label="entropy = 0.144\nsamples = 98\nvalue = [96, 2]"] ;
+4 [label="entropy = 0.912\nsamples = 1160\nvalue = [780, 380]"] ;
 2 -> 4 ;
+5 [label="entropy = 0.976\nsamples = 1798\nvalue = [1064, 734]"] ;
+1 -> 5 ;
+6 [label="loudness <= 0.766\nentropy = 0.576\nsamples = 788\nvalue = [680, 108]"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label="entropy = 0.229\nsamples = 351\nvalue = [338, 13]"] ;
+6 -> 7 ;
+8 [label="entropy = 0.755\nsamples = 437\nvalue = [342, 95]"] ;
+6 -> 8 ;
 }

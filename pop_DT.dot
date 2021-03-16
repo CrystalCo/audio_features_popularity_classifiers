@@ -7,10 +7,14 @@ node [shape=box] ;
 0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
 3 [label="entropy = 0.077\nsamples = 316\nvalue = [313, 3]"] ;
 2 -> 3 ;
-4 [label="loudness <= 0.825\nentropy = 0.788\nsamples = 2192\nvalue = [1675, 517]"] ;
+4 [label="danceability <= 0.58\nentropy = 0.788\nsamples = 2192\nvalue = [1675, 517]"] ;
 2 -> 4 ;
-5 [label="entropy = 0.43\nsamples = 669\nvalue = [610, 59]"] ;
+5 [label="entropy = 0.556\nsamples = 796\nvalue = [693, 103]"] ;
 4 -> 5 ;
-6 [label="entropy = 0.882\nsamples = 1523\nvalue = [1065, 458]"] ;
+6 [label="loudness <= 0.83\nentropy = 0.877\nsamples = 1396\nvalue = [982, 414]"] ;
 4 -> 6 ;
+7 [label="entropy = 0.554\nsamples = 420\nvalue = [366, 54]"] ;
+6 -> 7 ;
+8 [label="entropy = 0.95\nsamples = 976\nvalue = [616, 360]"] ;
+6 -> 8 ;
 }
